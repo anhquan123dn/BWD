@@ -1,0 +1,50 @@
+@import "/css/color.css";
+
+.logo {
+    width: inherit;
+    height: 50px;
+    background-color: black;
+}
+
+.search {
+    background-color: var(--blue);
+    width: 64px;
+    height: 64px;
+    color: var(--white);
+}
+
+.swiper-container {
+    height: 640px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--white);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.btn-find {
+    width: 100px;
+}

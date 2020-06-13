@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyVietNam</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/26ac62eb53.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/center.css" />
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/img/5352.jpg" alt="" /></div>
+        <div class="swiper-slide">
+          <img src="/img/long-exposure-accident-h-i-an-92090.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div
+        class="container position-absolute position-centerx"
+        style="bottom: 0; z-index: 999;"
+      >
+        <div class="row">
+          <div class="col-5 offset-1">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="travel-tab"
+                  data-toggle="tab"
+                  href="#travel"
+                  role="tab"
+                  aria-controls="travel"
+                  aria-selected="true"
+                  >Du lich</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="flights-tab"
+                  data-toggle="tab"
+                  href="#flights"
+                  role="tab"
+                  aria-controls="flights"
+                  aria-selected="false"
+                  >Chuyen bay</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="car-tab"
+                  data-toggle="tab"
+                  href="#car"
+                  role="tab"
+                  aria-controls="car"
+                  aria-selected="false"
+                  >Xe</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="hotel-tab"
+                  data-toggle="tab"
+                  href="#hotel"
+                  role="tab"
+                  aria-controls="hotel"
+                  aria-selected="false"
+                  >Khach san</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="travel"
+                role="tabpanel"
+                aria-labelledby="travel-tab"
+              >
+                <div class="input-travel-tab d-flex py-5">
+                  <div class="form-group w-50 mr-3 my-auto">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Where to go?"
+                    />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="dropdown mx-3 my-auto">
+                    <button
+                      class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Travel type
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <input
+                    name=""
+                    id=""
+                    class="btn-find btn btn-primary form-control my-auto"
+                    type="button"
+                    value="Search"
+                  />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="flights"
+                role="tabpanel"
+                aria-labelledby="flights-tab"
+              >
+                <div class="input-flight-tab d-flex py-5">
+                  <div class="form-group w-50 mr-3 my-auto">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Search Location"
+                    />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="dropdown mx-3 my-auto">
+                    <button
+                      class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Guest
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <input
+                    name=""
+                    id=""
+                    class="btn-find btn btn-primary form-control my-auto"
+                    type="button"
+                    value="Find Flight"
+                  />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="car"
+                role="tabpanel"
+                aria-labelledby="car-tab"
+              >
+                <div class="input-car-tab d-flex py-5">
+                  <div class="form-group w-50 mr-3 my-auto">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Search Location"
+                    />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="dropdown mx-3 my-auto">
+                    <button
+                      class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Guest
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <input
+                    name=""
+                    id=""
+                    class="btn-find btn btn-primary form-control my-auto"
+                    type="button"
+                    value="Find Car"
+                  />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="hotel"
+                role="tabpanel"
+                aria-labelledby="hotel-tab"
+              >
+                <div class="input-hotel-tab d-flex py-5">
+                  <div class="form-group w-50 mr-3 my-auto">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      aria-describedby="helpId"
+                      placeholder="Search Location"
+                    />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="input-group w-25 mx-3 my-auto">
+                    <input class="form-control" type="date" name="" />
+                  </div>
+                  <div class="dropdown mx-3 my-auto">
+                    <button
+                      class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Guest
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                  <input
+                    name=""
+                    id=""
+                    class="btn-find btn btn-primary form-control my-auto"
+                    type="button"
+                    value="Find Hotel"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container position-fixed position-centerx"
+      style="z-index: 9999; top: 0;"
+    >
+      <div class="row">
+        <div class="col-2 my-auto">
+          <img src="" alt="" class="logo" />
+        </div>
+        <div class="col-7 offset-2 my-auto">
+          <nav class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 5</a>
+            </li>
+          </nav>
+        </div>
+        <div class="col-1">
+          <div class="search d-flex justify-content-center align-items-center">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="/js/lib.js"></script>
+  </body>
+</html>
