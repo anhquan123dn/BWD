@@ -41,10 +41,48 @@
     color: var(--white);
 }
 
-.bg-white {
-    background-color: var(--white);
-}
-
 .btn-find {
     width: 100px;
+}
+
+.card-text {
+    opacity: var(--opacity-md);
+}
+
+.services .fs-icon {
+    font-size: 32px;
+}
+
+.destination .btn,
+.places .btn {
+    border-radius: 100px;
+    margin: 10px;
+}
+
+.subscribe {
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.subscribe::before {
+    content: "";
+    top: 0;
+    width: 100vw;
+    height: 400px;
+    background: url("/img/313.jpg") no-repeat center / 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer .favicon {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.footer li {
+    border: 0;
 }

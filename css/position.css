@@ -1,0 +1,16 @@
+.position-centerx {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.t-0 {
+    top: 0;
+}
