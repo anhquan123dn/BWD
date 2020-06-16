@@ -1,6 +1,10 @@
 :root {
-    --blue: #0984e3;
+    --blue: #2196F3;
+    --red: #F44336;
     --white: #fff;
     --gray: #f1f2f6;
     --opacity-md: 0.6;
+    --opacity-lg: 0.87;
+    --opacity-sm: 0.38;
+    --bg-footer: #18283C;
 }

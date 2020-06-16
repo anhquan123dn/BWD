@@ -20,6 +20,10 @@
       src="https://kit.fontawesome.com/26ac62eb53.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/position.css" />
@@ -43,7 +47,7 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-white"
                   id="travel-tab"
                   data-toggle="tab"
                   href="#travel"
@@ -55,7 +59,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link text-white"
                   id="flights-tab"
                   data-toggle="tab"
                   href="#flights"
@@ -67,7 +71,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link text-white"
                   id="car-tab"
                   data-toggle="tab"
                   href="#car"
@@ -79,7 +83,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link text-white"
                   id="hotel-tab"
                   data-toggle="tab"
                   href="#hotel"
@@ -92,8 +96,8 @@
             </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
+        <div class="form-search row bg-blue">
+          <div class="col-10 offset-1">
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
@@ -306,14 +310,15 @@
       </div>
     </div>
     <div
-      class="container position-fixed position-centerx"
+      class="container position-fixed position-centerx py-3"
+      id="nav-bar"
       style="z-index: 9999; top: 0;"
     >
       <div class="row">
         <div class="col-2 my-auto">
           <img src="" alt="" class="logo" />
         </div>
-        <div class="col-7 offset-2 my-auto">
+        <div class="col-8 offset-2 my-auto">
           <nav class="nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active text-white" href="#">Item 1</a>
@@ -330,12 +335,13 @@
             <li class="nav-item">
               <a class="nav-link active text-white" href="#">Item 5</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Item 7</a>
+            </li>
           </nav>
-        </div>
-        <div class="col-1">
-          <div class="search d-flex justify-content-center align-items-center">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </div>
         </div>
       </div>
     </div>
@@ -366,10 +372,10 @@
           </div>
         </div>
       </div>
-      <div class="services text-center my-5">
+      <div class="bg-gray-title text-center py-5">
         <h3>Our Services</h3>
       </div>
-      <div class="services">
+      <div class="services bg-gray pb-5">
         <div class="row">
           <div class="col-4">
             <div class="card text-center py-5">
@@ -408,7 +414,7 @@
             </div>
           </div>
         </div>
-        <div class="row my-5">
+        <div class="row py-5">
           <div class="col-4">
             <div class="card text-center py-5">
               <div class="services-icon fs-icon text-primary">
@@ -447,14 +453,14 @@
           </div>
         </div>
       </div>
-      <div class="destination text-center my-5">
+      <div class="destination text-center py-5">
         <h3>Popular Destination</h3>
         <p class="w-50 mx-auto">
           Suffered alteration in some form, by injected humour or good day
           randomised booth anim 8-bit hella wolf moon beard words.
         </p>
       </div>
-      <div class="destination">
+      <div class="destination pb-5">
         <div class="row">
           <div class="col-4">
             <div class="card position-relative">
@@ -550,14 +556,14 @@
           </div>
         </div>
       </div>
-      <div class="places text-center my-5">
+      <div class="bg-gray-title places text-center py-5">
         <h3>Popular Places</h3>
         <p class="w-50 mx-auto">
           Suffered alteration in some form, by injected humour or good day
           randomised booth anim 8-bit hella wolf moon beard words.
         </p>
       </div>
-      <div class="places">
+      <div class="places bg-gray pb-5">
         <div class="row">
           <div class="col-4">
             <div class="card position-relative">
@@ -654,8 +660,8 @@
         </div>
       </div>
     </div>
-    <div class="subscribe mt-5 py-5">
-      <h3 class="font-weight-bold text-center pt-5">
+    <div class="subscribe mt-5 py-5 text-white">
+      <h3 class="font-weight-bolder text-center pt-5">
         Subscribe to our newsletter to get the latest trends & news
       </h3>
       <p class="text-center pb-4">
@@ -693,7 +699,7 @@
         </div>
       </div>
     </div>
-    <div class="footer pt-5">
+    <div class="footer py-5 text-white">
       <div class="container">
         <div class="row">
           <div class="col-3">
@@ -794,5 +800,6 @@
     ></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/js/lib.js"></script>
+    <script src="/js/animation.js"></script>
   </body>
 </html>

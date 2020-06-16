@@ -1,5 +1,17 @@
 @import "/css/color.css";
 
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#nav-bar {
+    transition: top 0.3s;
+}
+
+#nav-bar .nav-item:hover {
+    border-bottom: 2px solid var(--blue);
+}
+
 .logo {
     width: inherit;
     height: 50px;
@@ -8,10 +20,11 @@
 
 .search {
     background-color: var(--blue);
-    width: 64px;
-    height: 64px;
+    width: 69px;
+    height: 69px;
     color: var(--white);
 }
+
 
 .swiper-container {
     height: 640px;
@@ -20,29 +33,58 @@
 .swiper-slide {
     text-align: center;
     font-size: 18px;
+    height: 640px;
+
     background: var(--white);
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
     align-items: center;
+}
+
+.swiper-slide::before {
+    content: "";
+    width: 100%;
+    height: 640px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, var(--opacity-sm));
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: 0;
+    background-color: var(--blue);
+}
+
+.swiper-container ul {
+    border: 0;
 }
 
 .text-white {
     color: var(--white);
 }
 
+.btn-primary {
+    background-color: var(--blue);
+    border: 0;
+}
+
+.btn-primary:hover {
+    background-color: var(--red);
+    border: 0;
+}
+
 .btn-find {
     width: 100px;
+}
+
+.form-search .btn-primary {
+    background-color: #3742fa;
+}
+
+.form-search .btn-primary:hover {
+    background-color: var(--red);
 }
 
 .card-text {
@@ -53,6 +95,44 @@
     font-size: 32px;
 }
 
+.bg-gray,
+.bg-gray-title {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-gray::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -90px;
+    z-index: -1;
+    width: 100vw;
+    height: 600px;
+    background-color: var(--gray);
+}
+
+.bg-gray-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -90px;
+    z-index: -1;
+    width: 100vw;
+    height: 137.6px;
+    background-color: var(--gray);
+}
+
+.places.bg-gray-title::before {
+    content: "";
+    height: 201.6px;
+}
+
+.places.bg-gray::before {
+    content: "";
+    height: 750px;
+}
+
 .destination .btn,
 .places .btn {
     border-radius: 100px;
@@ -60,18 +140,19 @@
 }
 
 .subscribe {
-    width: 100vw;
+    width: 100%;
     height: 400px;
     position: relative;
     z-index: 1;
+    background: url("/img/313.jpg") no-repeat center / 100%;
 }
 
 .subscribe::before {
     content: "";
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 400px;
-    background: url("/img/313.jpg") no-repeat center / 100%;
+    background-color: rgba(0, 0, 0, 0.411);
     position: absolute;
     z-index: -1;
 }
@@ -83,6 +164,15 @@
     border-radius: 100%;
 }
 
+.footer,
+.footer .list-group-item {
+    background-color: var(--bg-footer);
+}
+
 .footer li {
     border: 0;
+}
+
+.bg-blue {
+    background-color: var(--blue);
 }
