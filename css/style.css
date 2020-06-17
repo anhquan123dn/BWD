@@ -1,4 +1,5 @@
 @import "/css/color.css";
+@import "/css/animation.css";
 
 body {
     font-family: 'Lato', sans-serif;
@@ -6,6 +7,10 @@ body {
 
 #nav-bar {
     transition: top 0.3s;
+    -webkit-transition: top 0.3s;
+    -moz-transition: top 0.3s;
+    -ms-transition: top 0.3s;
+    -o-transition: top 0.3s;
 }
 
 #nav-bar .nav-item:hover {
@@ -61,9 +66,6 @@ body {
     border: 0;
 }
 
-.text-white {
-    color: var(--white);
-}
 
 .btn-primary {
     background-color: var(--blue);
@@ -105,27 +107,37 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -90px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
     width: 100vw;
     height: 600px;
     background-color: var(--gray);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .bg-gray-title::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -90px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
     width: 100vw;
-    height: 137.6px;
+    height: 138px;
     background-color: var(--gray);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .places.bg-gray-title::before {
     content: "";
-    height: 201.6px;
+    height: 210px;
 }
 
 .places.bg-gray::before {
@@ -137,6 +149,10 @@ body {
 .places .btn {
     border-radius: 100px;
     margin: 10px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .subscribe {
@@ -162,6 +178,10 @@ body {
     height: 50px;
     background-color: black;
     border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .footer,
@@ -175,4 +195,56 @@ body {
 
 .bg-blue {
     background-color: var(--blue);
+}
+
+.destination .card:hover {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition-duration: .5s;
+    color: black;
+}
+
+.destination .card-img {
+    position: relative;
+    z-index: 0;
+}
+
+.destination .card:hover>.card-img::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    animation-name: fadeup;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+.fadedown {
+    animation-name: fadedown;
+    animation-duration: .5s;
+}
+
+.destination .card:hover button {
+    background-color: var(--red);
+}
+
+.destination .card:hover h4 {
+    color: black !important;
+}
+
+.places .card:hover {
+    top: -30px;
+    animation-name: top;
+    animation-duration: .5s;
+    animation-play-state: running;
+}
+
+.places .card:hover button {
+    background-color: var(--red);
 }

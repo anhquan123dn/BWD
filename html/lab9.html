@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    #panel,
+    .flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+    .animate {
+      width: 100%;
+      height: 300px;
+      position: relative;
+    }
+    .stop #panel,
+    .stop #flip {
+      padding: 5px;
+      font-size: 18px;
+      text-align: center;
+      background-color: #555;
+      color: white;
+      border: solid 1px #666;
+      border-radius: 3px;
+    }
+
+    .stop #panel {
+      padding: 50px;
+      display: none;
+    }
+    button {
+      padding: 8px 12px;
+      border: 0;
+      background-color: #0984e3;
+      color: white;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+    .hide-show,
+    .hide-slow,
+    .hide-show-toggle,
+    .fade,
+    .slide,
+    .animate,
+    .stop,
+    .stop,
+    .callback,
+    .chaining {
+      border-bottom: 1px solid gray;
+      padding: 50px 0;
+    }
+    .d-flex {
+      display: flex;
+      justify-content: center;
+    }
+    .flip {
+      padding: 8px 12px;
+      background-color: #0984e3;
+      border: 0;
+      margin: 5px;
+      color: white;
+      border-radius: 5px;
+    }
+    .flip:hover {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="hide-show">
+      <h1>Hide & Show</h1>
+      <p>If you click on the "Hide" button, I will disappear.</p>
+      <div class="d-flex">
+        <button id="hide" class="btn btn-primary">Hide</button>
+        <button id="show" class="btn btn-primary">Show</button>
+      </div>
+      <script>
+        $("#hide").click(function () {
+          $(".hide-show p").hide();
+        });
+
+        $("#show").click(function () {
+          $(".hide-show p").show();
+        });
+      </script>
+    </div>
+    <div class="hide-slow">
+      <h1>Hide & Show SLOW</h1>
+      <p id="slow">
+        If you click on the "Hide-slow" button, I will disappear slow.
+      </p>
+      <button id="hide-slow" class="btn btn-primary">Hide-slow</button>
+      <button id="show-slow" class="btn btn-primary">Show-slow</button>
+      <script>
+        $("#hide-slow").click(function () {
+          $("#slow").hide("slow");
+        });
+        $("#show-slow").click(function () {
+          $("#slow").show("slow");
+        });
+      </script>
+    </div>
+    <div class="hide-show-toggle">
+      <h1>Hide & Show Toggle</h1>
+      <p id="toggle">This is another small paragraph.</p>
+      <button id="toggle" class="btn btn-primary">
+        Toggle between hiding and showing the paragraphs
+      </button>
+      <script>
+        $(document).ready(function () {
+          $("#toggle").click(function () {
+            $("p#toggle").toggle();
+          });
+        });
+      </script>
+    </div>
+    <div class="fade">
+      <h1>Fade In/Out/Toggle/To</h1>
+      <p>Demonstrate fadeIn() with different parameters.</p>
+      <div class="d-flex">
+        <button id="fadein">Click to fade in boxes</button><br /><br />
+        <button id="fadeout">Click to fade out boxes</button><br /><br />
+        <button id="fadetoggle">Click to fade in/out boxes</button><br /><br />
+        <button id="fadeto">Click to fade boxes</button><br /><br />
+      </div>
+
+      <div
+        id="div1"
+        style="width: 80px; height: 80px; display: none; background-color: red;"
+      ></div>
+      <br />
+      <div
+        id="div2"
+        style="
+          width: 80px;
+          height: 80px;
+          display: none;
+          background-color: green;
+        "
+      ></div>
+      <br />
+      <div
+        id="div3"
+        style="
+          width: 80px;
+          height: 80px;
+          display: none;
+          background-color: blue;
+        "
+      ></div>
+      <script>
+        $(document).ready(function () {
+          $("#fadein").click(function () {
+            $(" #div1").fadeIn();
+            $(" #div2").fadeIn("slow");
+            $(" #div3").fadeIn(3000);
+          });
+          $("#fadeout").click(function () {
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(3000);
+          });
+          $("#fadetoggle").click(function () {
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+          });
+          $("#fadeto").click(function () {
+            $("#div1").fadeTo("slow", 0.15);
+            $("#div2").fadeTo("slow", 0.4);
+            $("#div3").fadeTo("slow", 0.7);
+          });
+        });
+      </script>
+    </div>
+    <div class="slide">
+      <h1>Slide Down/Up/Toggle</h1>
+      <div class="slide-down">
+        <div class="d-flex">
+          <div id="flip-down" class="flip">Click to slide down panel</div>
+          <div id="flip-up" class="flip">Click to slide up panel</div>
+          <div id="flip-toggle" class="flip">Click to slide down/up panel</div>
+        </div>
+        <div id="panel">Hello world!</div>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $("#flip-down").click(function () {
+            $("#panel").slideDown("slow");
+          });
+          $("#flip-up").click(function () {
+            $("#panel").slideUp("slow");
+          });
+          $("#flip-toggle").click(function () {
+            $("#panel").slideToggle();
+          });
+        });
+      </script>
+    </div>
+    <div class="animate">
+      <h1>Animate</h1>
+      <button id="animate">Start Animation</button>
+      <div
+        class="div1"
+        style="
+          background: #98bf21;
+          height: 100px;
+          width: 100px;
+          position: absolute;
+        "
+      ></div>
+      <div
+        class="div2"
+        style="
+          background: red;
+          height: 100px;
+          width: 100px;
+          position: absolute;
+        "
+      ></div>
+      <script>
+        $(document).ready(function () {
+          $("#animate").click(function () {
+            $(".animate .div1").animate({ left: "250px" });
+          });
+          $("#animate").click(function () {
+            $(".animate .div2").animate({
+              left: "250px",
+              opacity: "0.5",
+              height: "150px",
+              width: "150px",
+            });
+          });
+        });
+      </script>
+    </div>
+    <div class="stop">
+      <h1>Stop()</h1>
+      <button id="start">Start sliding</button>
+      <button id="stop">Stop sliding</button>
+
+      <div id="flip">Click to slide down panel</div>
+      <div id="panel">Hello world!</div>
+
+      <script>
+        $(document).ready(function () {
+          $(".stop #flip").click(function () {
+            $(".stop #panel").slideDown(5000);
+          });
+          $(".stop #stop").click(function () {
+            $(".stop #panel").stop();
+          });
+          $(".stop #start").click(function () {
+            $(".stop #panel").slideDown(5000);
+          });
+        });
+      </script>
+    </div>
+    <div class="callback">
+      <h1>Callback</h1>
+      <p class="on">This is a paragraph with little content.</p>
+      <p class="off">This is a paragraph with little content.</p>
+      <button class="oncallback">Hide with Callback</button>
+      <button class="offcallback">Hide without Callback</button>
+
+      <script>
+        $(document).ready(function () {
+          $(".oncallback").click(function () {
+            $(".callback .on").hide("slow", function () {
+              alert("The paragraph is now hidden");
+            });
+          });
+          $(".offcallback").click(function () {
+            $(".callback .off").hide(1000);
+            alert("The paragraph is now hidden");
+          });
+        });
+      </script>
+    </div>
+    <div class="chaining">
+      <h1>Chaining</h1>
+      <p id="p1">jQuery is fun!!</p>
+
+      <button>Click me</button>
+      <script>
+        $(document).ready(function () {
+          $(".chaining button").click(function () {
+            $(".chaining #p1")
+              .css("color", "red")
+              .slideUp(2000)
+              .slideDown(2000);
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
