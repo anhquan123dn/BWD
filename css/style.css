@@ -48,7 +48,7 @@ body {
     align-items: center;
 }
 
-.swiper-slide::before {
+.slide-header .swiper-slide::before {
     content: "";
     width: 100%;
     height: 640px;
@@ -222,8 +222,9 @@ body {
     background: rgb(255, 255, 255);
     animation-name: fadeup;
     animation-duration: .5s;
-    animation-direction: alternate;
 }
+
+
 
 .fadedown {
     animation-name: fadedown;
@@ -247,4 +248,15 @@ body {
 
 .places .card:hover button {
     background-color: var(--red);
+}
+
+/* Destination */
+.people-says-slide img {
+    height: 1000px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.people-says-text {
+    left: -100px;
 }
