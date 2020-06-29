@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login or Sign up</title>
+    <script
+      src="https://kit.fontawesome.com/6f3e2743ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/loginstyle.css" />
+  </head>
+  <body>
+    <section class="container" id="container">
+      <div class="splitter">
+        <span>or</span>
+      </div>
+      <div class="form-cont sign-up-cont">
+        <form action="#">
+          <h1>Create Account</h1>
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm password" required />
+          <button id="Submit">Sign up</button>
+          <span>or join us with</span>
+          <div class="social-cont">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-cont sign-in-cont">
+        <form action="/html/CheckOut.html">
+          <h1>Sign in</h1>
+          <input
+            type="text"
+            id="user"
+            placeholder="Email or Username"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <label for="remember">
+            <input type="checkbox" name="remember" id="remember" />
+            <span class="checkmark"></span>
+            <span>Remember me</span>
+          </label>
+          <a href="#" id="forgot">I forgot my password.</a>
+          <button id="Login">Go now</button>
+          <span>or login with</span>
+          <div class="social-cont">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="overlay-cont">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>You'r Back!</h1>
+            <p>
+              Login now and start another amazing journey!
+            </p>
+            <button class="ghost" id="to-sign-in">Sign in</button>
+            <a class="go-back" href="homepage.html">
+              back to homepage
+            </a>
+          </div>
+          <!---->
+          <div class="overlay-panel overlay-right">
+            <h1>Welcome, Traveler!</h1>
+            <p>
+              Login, prepare backpack and start your travel with us!
+            </p>
+            <button class="ghost" id="to-sign-up">Sign up</button>
+            <a class="go-back" href="homepage.html">
+              back to homepage
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Script-->
+    <script src="/script/main.js"></script>
+  </body>
+</html>

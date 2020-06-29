@@ -5,6 +5,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.h-250px {
+    height: 250px;
+    object-fit: cover;
+}
+
 #nav-bar {
     transition: top 0.3s;
     -webkit-transition: top 0.3s;
@@ -35,7 +40,7 @@ body {
     height: 640px;
 }
 
-.swiper-slide {
+.swiper-container.swiper-slide {
     text-align: center;
     font-size: 18px;
     height: 640px;
@@ -142,7 +147,7 @@ body {
 
 .places.bg-gray::before {
     content: "";
-    height: 750px;
+    height: 1200px;
 }
 
 .destination .btn,
@@ -258,5 +263,56 @@ body {
 }
 
 .people-says-text {
-    left: -100px;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
+
+/* Destination-checked */
+.swiper-container-multi {
+    overflow: hidden;
+}
+
+.swiper-container-multi.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.destination-checked .title {
+    position: relative;
+}
+
+/* .destination-checked .title::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+} */
