@@ -1,0 +1,53 @@
+/* @keyframes scale {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transition-duration: .5s;
+    }
+
+    to {
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transition-duration: .5s;
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        bottom: -60px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadedown {
+    0% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: -60px;
+        opacity: 0;
+    }
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -30px;
+    }
+} */

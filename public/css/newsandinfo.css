@@ -1,0 +1,136 @@
+@import "../css/color.css";
+@import "../css/animation.css";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.news-img-lg img, .news-img-md img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+}
+.news-img-sm img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.news-body-lg h3, .news-body-md h5, .news-body-sm p, .news-body h2 {
+    color: var(--blue);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.news-body {
+    padding: 1em;
+}
+.news-body p {
+    font-size: 18px;
+    font-weight: bold;
+}
+.news-body-lg h3:hover a, .news-body-md h5:hover a, .news-body-sm p:hover a, .news-body h1:hover a {
+    text-decoration: none;
+}
+.owl-prev, .owl-next {
+    width: 50px;
+    height: auto;
+}
+.owl-prev:hover, .owl-next:hover {
+    background-color: var(--blue) !important;
+}
+.owl-next:focus, .owl-prev:focus {
+    outline: none;
+    border: none;
+}
+.owl-dots .active span {
+    background-color: var(--blue) !important;
+}
+.news-img {
+    width: 100%;
+}
+.news-img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+hr {
+    border: 2px solid var(--blue);
+}
+
+#boxs .box:nth-child(n + 18) {
+    display: none;
+}
+#showMore {
+    margin: 2em;
+    padding: .6em 2em;
+    border: none;
+    border-radius: 5px;
+    background: var(--yellow);
+    transition: 0.3s;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: var(--yellow);
+}
+#showMore:focus {
+    outline: none;
+}
+#showMore:hover, #showMore:hover span {
+    background: var(--blue);
+}
+#showMore:active {
+    transform: scale(0.9);
+}
+
+/*----------------*/
+.share-like {
+    padding: 1em;
+}
+.share-like a {
+    font-size: 17px;
+    margin: 0 1em;
+}
+.news-intro p{
+   font-size: 20px;
+   font-weight: bold; 
+}
+.acrticle-img img {
+    width: 100%;
+    height: auto;
+}
+.news-content {
+    margin: 2em 1em;
+}
+.news-content h2 {
+    color: var(--blue);
+    letter-spacing: 1px;
+}
+.related-news {
+    background: var(--gray);
+}
+.comment-post textarea {
+    padding: 5px;
+    width: 100%;
+    resize: none;
+}
+.comment-box {
+    padding: 1em;
+    background-color: var(--gray);
+}
+.comment-box ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.comment-box ul li {
+    margin: 0;
+}
+.comment-box ul li:nth-child(n+2):before {
+    content: " • ";
+    margin: 0 0.2em;
+}
+.comment-box .reply-box {
+    margin-left: 3em;
+}
+

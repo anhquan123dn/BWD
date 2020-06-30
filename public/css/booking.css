@@ -1,0 +1,38 @@
+@import "../css/color.css";
+@import "../css/animation.css";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.my-navbar {
+    background-color: var(--blue);
+}
+.my-navbar a {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.1s;
+}
+.my-navbar li:hover a {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: var(--gray);
+}
+
+.wrapper-lg {
+    background: var(--blue) url("../img/black-outdoor-lounge-chair-in-between-blue-swimming-pool-189296.jpg") center no-repeat;
+    height: 400px;
+    overflow: hidden;
+}
+.card-title {
+    color: var(--blue);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.card-body h4 {
+    color: var(--yellow);
+}

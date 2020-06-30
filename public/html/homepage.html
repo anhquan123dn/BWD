@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyVietNam</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/lib/fontawesome-free-5.13.0-web(1)/fontawesome-free-5.13.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/lib/fontawesome-free-5.13.0-web(1)/fontawesome-free-5.13.0-web/css/v4-shims.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lib/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/position.css" />
+  </head>
+  <body>
+    <div class="slide-header">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/200944.jpg" alt="" class="w-100" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/5352.jpg" alt="" class="w-100" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="/img/long-exposure-accident-h-i-an-92090.jpg"
+              alt=""
+              class="w-100 h-100"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div
+          class="container position-absolute position-centerx"
+          style="bottom: 0; z-index: 999;"
+        >
+          <div class="row">
+            <div class="col-5 offset-1">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    id="travel-tab"
+                    data-toggle="tab"
+                    href="#travel"
+                    role="tab"
+                    aria-controls="travel"
+                    aria-selected="true"
+                    >Du lich</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="flights-tab"
+                    data-toggle="tab"
+                    href="#flights"
+                    role="tab"
+                    aria-controls="flights"
+                    aria-selected="false"
+                    >Chuyen bay</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="car-tab"
+                    data-toggle="tab"
+                    href="#car"
+                    role="tab"
+                    aria-controls="car"
+                    aria-selected="false"
+                    >Xe</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="hotel-tab"
+                    data-toggle="tab"
+                    href="#hotel"
+                    role="tab"
+                    aria-controls="hotel"
+                    aria-selected="false"
+                    >Khach san</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-search row bg-blue">
+            <div class="col-10 offset-1">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="travel"
+                  role="tabpanel"
+                  aria-labelledby="travel-tab"
+                >
+                  <div class="input-travel-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Where to go?"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Travel type
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Search"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="flights"
+                  role="tabpanel"
+                  aria-labelledby="flights-tab"
+                >
+                  <div class="input-flight-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Check-in date"
+                        onfocus="(this.type='date')"
+                        name=""
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-out date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Find Flight"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="car"
+                  role="tabpanel"
+                  aria-labelledby="car-tab"
+                >
+                  <div class="input-car-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Start date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Return date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Find Car"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="hotel"
+                  role="tabpanel"
+                  aria-labelledby="hotel-tab"
+                >
+                  <div class="input-hotel-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-in date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-out date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <a href="/html/HotelPage.html">
+                      <input
+                        name=""
+                        id=""
+                        class="btn-find btn btn-primary form-control my-auto"
+                        type="button"
+                        value="Find Hotel"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container position-fixed position-centerx py-3"
+      id="nav-bar"
+      style="z-index: 9999; top: 0;"
+    >
+      <div class="row">
+        <div class="col-2 my-auto logo"></div>
+        <div class="col-8 offset-2 my-auto">
+          <nav class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="/html/homepage.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="/html/About.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                href="/html/destination.html"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                href="/html/NewsandInfo.html"
+                >News</a
+              >
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="discover">
+        <div class="row my-5">
+          <div class="col-4">
+            <h3>Discover the most amazing destination in VietNam</h3>
+            <p>
+              Viet Nam la 1 trong cac nuoc DNA pho bien ve du lich. Vi vi tri
+              dia li nam giap bien nen Viet Nam co rat nhieu bai bien dep ,khong
+              chi the con co nhung noi do thien nhien tao hoa lam tang ve dep tu
+              nhien cua Viet Nam khien cac khach du lich hay den day.
+            </p>
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="/img/bao_Anh_ca_ngoi_Viet_Nam_2_AWLS.jpg"
+                  alt=""
+                  class="card-img h-100"
+                />
+              </div>
+              <div class="col-4">
+                <img src="/img/DJI_0004.jpg" alt="" class="card-img h-100" />
+              </div>
+              <div class="col-4">
+                <img
+                  src="/img/palm-trees-at-night-258154.jpg"
+                  alt=""
+                  class="card-img h-100"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-title text-center py-5">
+        <h3>Our Services</h3>
+      </div>
+      <div class="services bg-gray pb-5">
+        <div class="row">
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card text-center py-5 shadow">
+              <div class="services-icon fs-icon text-primary">
+                <i class="fa fa-diamond" aria-hidden="true"></i>
+              </div>
+              <h4>Personalized Booking</h4>
+              <p class="card-text">
+                Our unique booking system lets you find the perfect tour you
+                want for your holiday.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="destination text-center py-5">
+        <h3>Popular Destination</h3>
+        <p class="w-50 mx-auto">
+          Suffered alteration in some form, by injected humour or good day
+          randomised booth anim 8-bit hella wolf moon beard words.
+        </p>
+      </div>
+      <div class="destination pb-5">
+        <div class="row">
+          <div class="col-4">
+            <div class="card position-relative" onmouseout="faedown()">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/DJI_0004.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Da Nang
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  04 Places
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/đà-lạt-e1545637857592.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Da Lat
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  05 Places
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/vinh-ha-long-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Ha Long Bay
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  07 Places
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/tour-moc-chau-ivivu-com-2-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Sơn La
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  07 Places
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img class="card-img-top h-250px" src="/img/5352.jpg" alt="" />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Da Nang
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  07 Places
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img class="card-img-top h-250px" src="/img/5352.jpg" alt="" />
+              </div>
+              <div
+                class="w-100 position-absolute b-0 d-flex justify-content-between"
+              >
+                <h4 class="my-auto ml-3 font-weight-bolder text-white">
+                  Da Nang
+                </h4>
+                <button class="btn btn-primary" type="button">
+                  07 Places
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            name=""
+            id=""
+            class="btn btn-primary rounded py-3 px-4 font-weight-bold mx-auto mt-5"
+          >
+            <h5 class="mb-0">Show more</h5>
+          </button>
+        </div>
+      </div>
+      <div class="bg-gray-title places text-center py-5">
+        <h3>Popular Places</h3>
+        <p class="w-50 mx-auto">
+          Suffered alteration in some form, by injected humour or good day
+          randomised booth anim 8-bit hella wolf moon beard words.
+        </p>
+      </div>
+      <div class="places bg-gray pb-5">
+        <div class="row">
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/long-exposure-accident-h-i-an-92090.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/tour-moc-chau-ivivu-com-2-1.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/palm-trees-at-night-258154.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/đà-lạt-e1545637857592.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/vinh-ha-long-1.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card position-relative">
+              <div class="card-img">
+                <img
+                  class="card-img-top h-250px"
+                  src="/img/DJI_0004.jpg"
+                  alt=""
+                />
+              </div>
+              <button
+                class="btn btn-primary position-absolute t-0"
+                type="button"
+              >
+                $700
+              </button>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="Booking.html">Da Nang</a>
+                </h4>
+
+                <div class="card-text">
+                  <p>123 Tran Dai Nghia street, Da Nang City</p>
+                  <p>Booking Number: 19001234</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            name=""
+            id=""
+            class="btn btn-primary rounded py-3 px-4 font-weight-bold mx-auto mt-5"
+          >
+            <h5 class="mb-0">Show more</h5>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe mt-5 py-5 text-white">
+      <h3 class="font-weight-bolder text-center pt-5">
+        Subscribe to our newsletter to get the latest trends & news
+      </h3>
+      <p class="text-center pb-4">
+        Earn a discounts up to 50% off sents straight to your inbox
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-2 offset-1">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Name"
+              />
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id=""
+                aria-describedby="helpId"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+          <div class="col-2">
+            <button class="btn btn-primary" type="button">Subcribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row">
+              <div class="favicon"></div>
+              <h3 class="my-auto">MyVietNam</h3>
+            </div>
+            <p>
+              5th flora, 700/D kings road, green lane New York-1782 <br />
+              +10 367 8262567 <br />
+              contact@carpenter.com
+            </p>
+          </div>
+          <div class="col-2">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">
+                Company
+              </li>
+              <li class="list-group-item">Pricing</li>
+              <li class="list-group-item">About</li>
+              <li class="list-group-item">Gallery</li>
+              <li class="list-group-item">Contact</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">
+                Popular Destination
+              </li>
+              <li class="list-group-item pt-0">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <ul class="list-group">
+                      <li class="list-group-item px-0">Pricing</li>
+                      <li class="list-group-item px-0">About</li>
+                      <li class="list-group-item px-0">Gallery</li>
+                      <li class="list-group-item px-0">Contact</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-group pt-0">
+                      <li class="list-group-item px-0">Pricing</li>
+                      <li class="list-group-item px-0">About</li>
+                      <li class="list-group-item px-0">Gallery</li>
+                      <li class="list-group-item px-0">Contact</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">Instagram</li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/lib/bootstrap/jquery.slim.min.js"></script>
+    <script src="/lib/bootstrap/popper.min.js"></script>
+    <script src="/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="/lib/swiper/swiper.min.js"></script>
+    <script src="/js/lib.js"></script>
+    <script src="/js/animation.js"></script>
+  </body>
+</html>

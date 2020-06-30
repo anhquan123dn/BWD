@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>News - MyVietNam</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../lib/fontawesome-free-5.13.0-web(1)/fontawesome-free-5.13.0-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/fontawesome-free-5.13.0-web(1)/fontawesome-free-5.13.0-web/css/v4-shims.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../lib/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/position.css" />
+    <link rel="stylesheet" href="../css/newsandinfo.css">
+  </head>
+  <body>
+    <div class="slide-header"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h1
+              class="position-absolute position-center text-white font-weight-bold"
+            >
+              News
+            </h1>
+            <img src="/img/5352.jpg" alt="" class="w-100" />
+          </div>
+        </div>
+        <div
+          class="container position-absolute position-centerx"
+          style="bottom: 0; z-index: 999;"
+        >
+          <div class="row">
+            <div class="col-5 offset-1">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    id="travel-tab"
+                    data-toggle="tab"
+                    href="#travel"
+                    role="tab"
+                    aria-controls="travel"
+                    aria-selected="true"
+                    >Du lich</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="flights-tab"
+                    data-toggle="tab"
+                    href="#flights"
+                    role="tab"
+                    aria-controls="flights"
+                    aria-selected="false"
+                    >Chuyen bay</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="car-tab"
+                    data-toggle="tab"
+                    href="#car"
+                    role="tab"
+                    aria-controls="car"
+                    aria-selected="false"
+                    >Xe</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white"
+                    id="hotel-tab"
+                    data-toggle="tab"
+                    href="#hotel"
+                    role="tab"
+                    aria-controls="hotel"
+                    aria-selected="false"
+                    >Khach san</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-search row bg-blue">
+            <div class="col-10 offset-1">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="travel"
+                  role="tabpanel"
+                  aria-labelledby="travel-tab"
+                >
+                  <div class="input-travel-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Where to go?"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Travel type
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Search"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="flights"
+                  role="tabpanel"
+                  aria-labelledby="flights-tab"
+                >
+                  <div class="input-flight-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Check-in date"
+                        onfocus="(this.type='date')"
+                        name=""
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-out date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Find Flight"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="car"
+                  role="tabpanel"
+                  aria-labelledby="car-tab"
+                >
+                  <div class="input-car-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Start date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Return date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Find Car"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="hotel"
+                  role="tabpanel"
+                  aria-labelledby="hotel-tab"
+                >
+                  <div class="input-hotel-tab d-flex py-5">
+                    <div class="form-group w-50 mr-3 my-auto">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name=""
+                        id=""
+                        aria-describedby="helpId"
+                        placeholder="Search Location"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-in date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="input-group w-25 mx-3 my-auto">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name=""
+                        placeholder="Check-out date"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
+                    <div class="dropdown mx-3 my-auto">
+                      <button
+                        class="btn btn-secondary dropdown-toggle bg-white text-black-50"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Guest
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                    <a href="/html/HotelPage.html">
+                      <input
+                      name=""
+                      id=""
+                      class="btn-find btn btn-primary form-control my-auto"
+                      type="button"
+                      value="Find Hotel"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container position-fixed position-centerx py-3"
+      id="nav-bar"
+      style="z-index: 9999; top: 0;"
+    >
+      <div class="row">
+        <div class="col-2 my-auto logo">
+        </div>
+        <div class="col-8 offset-2 my-auto">
+          <nav class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="/html/homepage.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="/html/About.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                href="/html/destination.html"
+                >Destination</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                href="/html/NewsandInfo.html"
+                >News</a
+              >
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="row my-5">
+        <div class="col-sm-3">
+          <div class="news-cont-sm">
+            <div class="news-img-sm">
+              <a href="#">
+                <img src="../img/1460707107-len-ke-hoach-cho-gia-dinh--1-.jpg" alt="news">
+              </a>
+            </div>
+            <div class="news-body-sm">
+              <p class="mt-3" >
+                <a href="#">Here is new information</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="news-cont-sm">
+            <div class="news-img-sm">
+              <a href="#">
+                <img src="../img/1460707107-len-ke-hoach-cho-gia-dinh--1-.jpg" alt="news">
+              </a>
+            </div>
+            <div class="news-body-sm">
+              <p class="mt-3" >
+                <a href="#">Here is new information</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="news-cont-sm">
+            <div class="news-img-sm">
+              <a href="#">
+                <img src="../img/1460707107-len-ke-hoach-cho-gia-dinh--1-.jpg" alt="news">
+              </a>
+            </div>
+            <div class="news-body-sm">
+              <p class="mt-3" >
+                <a href="#">Here is new information</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="news-cont-sm">
+            <div class="news-img-sm">
+              <a href="#">
+                <img src="../img/1460707107-len-ke-hoach-cho-gia-dinh--1-.jpg" alt="news">
+              </a>
+            </div>
+            <div class="news-body-sm">
+              <p class="mt-3" >
+                <a href="#">Here is new information</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-7">
+          <h1>
+            Heading Outdoors for a Socially Distant Getaway? Try These Apps
+          </h1>
+          <div class="source-news">
+            <span>Anh Quan</span>, 6h ago.
+          </div>
+          <div class="share-like">
+            <a href="#">
+              <i class="fas fa-share-alt"></i>
+              46 shared
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+              12 retwited
+            </a>
+            <a href="#">
+              <i class="fas fa-thumbs-up"></i>
+              123 liked
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <hr>
+          <div class="news-intro">
+            <p>
+              Views, trails, the best takeaway food and where to find
+               an evil clown sign, not to mention a Jell-O museum, can 
+               all be found with these apps for the outdoors-bound.
+            </p>
+          </div>
+          <div class="acrticle-img my-4">
+            <img src="../img/đà-lạt-e1545637857592.jpg" alt="arcticle">
+          </div>
+          <div class="news-content">
+            <p>
+              Planning to escape to the great outdoors for a socially distant summer? 
+              There are a few apps you may want to download before you go. After all, 
+              the tools below won’t just help you travel from here to there, they’ll 
+              help you get off the beaten paths in national parks, learn about road and 
+              trail closures, discover nearby preserves and beaches, find scenic rest 
+              stops, satisfy cravings for takeaway food and keep you up-to-date on the 
+              latest travel and health information. To be sure, there are many 
+              practical apps for outdoor adventure and road tripping, like Waze 
+              (for navigation), GasBuddy (for finding affordable gas stations) 
+              and Flush (for locating public bathrooms). And planning and booking 
+              apps, like TripAdvisor Hotels & Vacation, have been updated with notices 
+              and guidance about travel amid Covid-19. But the following apps may prove 
+              to be particularly useful by helping travelers stay socially distant yet 
+              still savor the timeless pleasures of summer — hiking, biking, camping 
+              and dinners under the stars in wide open spaces. 
+              <h2>Discovering the great 
+                outdoors</h2>
+              Wondering what lies just around the bend? Roadtrippers uses 
+              your location to show you beaches, parks, lakes, nature preserves, 
+              farms, botanical gardens, public art, monuments, vacation photo-ops, 
+              camping and R.V. spots, to name but a few. You can easily search for 
+              attractions near you, or along a route you set, then navigate there with 
+              turn-by-turn driving directions.
+
+              Roadtrippers is especially handy because you can filter for the types 
+              of places you want to see, outdoor activities and destinations. Tap an 
+              attraction for more information and photos, and select “add to trip” to 
+              include in your itinerary, which you can save and export to a PDF if you like. 
+              The app also has inspirational travel guides, like “Classic USA Road Trips.” 
+              And you can choose from nearby itineraries such as “The Coolest Attractions 
+              and Stops Along I-80,” so you can begin to feel as if you’re on vacation long 
+              before you reach your destination. Cost: free; $29.99 a year to upgrade to 
+              Roadtrippers Plus, which has features such as offline maps, live traffic 
+              information, itineraries with numerous way points and no advertisements.
+            </p>
+          </div>
+          <div class="related-news">
+            <h4 class="p-3">More related news</h4>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5 class="px-5 py-3">
+                  <a href="#">
+                    Worried About Social Distancing When Traveling? Join the Crowd and Rent an R.V
+                  </a>
+                </h5>
+              </div>
+              <div class="col-sm-12">
+                <h5 class="px-5 py-3">
+                  <a href="#">
+                    11 Great Alternatives to the Top National ParksJune
+                  </a>
+                </h5>
+              </div>
+              <div class="col-sm-12">
+                <h5 class="px-5 py-3">
+                  <a href="#">
+                    Worried About Social Distancing When Traveling? Join the Crowd and Rent an R.V
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="news-content">
+            For those with a yen for oddities — an outdoor bathtub 
+            in West Virginia’s Berkeley Springs State Park, said 
+            to have been used by George Washington; a memorial stone 
+            in Hampton, N.H., for a woman accused of witchcraft in the 
+            1600s; the Jell-O Museum in Le Roy, N. Y., where the jiggly 
+            dessert was invented — there’s the Roadside America app, which 
+            displays (occasionally dubious) attractions (i.e., a 22-foot 
+            so-called “evil clown” sign in Middletown, N. J.) by city, 
+            route and theme such as “ghost towns,” “railroad” and 
+            “freaky hoo-ha.” Cost: $2.99 for one region, such as the 
+            Northeast; $6.99 to unlock the remaining regions.
+            <h2 class="mt-3">Making pit stops</h2>
+            Need to fill the tank? Craving pizza? Want to stretch your legs somewhere scenic? For years, the Iexit Interstate Exit Guide app has helped travelers see what’s coming up at major exits, be it food, coffee, lodging, attractions or gas (nowadays, prices are included so you can pick the cheapest station). Allow the app to access your location, or search by state and highway. Cost: Free; $1.99 for the ad-free version.
+
+On the Allset app you’ll find restaurants and coffee shops with banners that say “no-contact pickup” (meaning that they have a dedicated contactless pickup area inside) and “curbside pickup” (your order will be brought to your car), enabling you to swing by for burgers, Indian, even a glass of sangria (to be enjoyed once you’ve exited the car, of course). Cost: Free.
+
+Yes, you know Google Maps offers navigation. But you may not have noticed that the app has added “Takeout” to its home screen, which means you can now tap to find participating restaurants. Google Maps can also locate nearby grocery stores, parks, A.T.M.s, gas stations and parking lots, making it an essential road tripper’s companion. (It can even be helpful when striving for social distance. Tap on a New York City subway station, for example, and you’ll see information about service modifications because of Covid-19, and be able to check out how busy that particular station is at different times.) Cost: Free.
+
+Editors’ Picks
+
+Overlooked No More: Valerie Solanas, Radical Feminist Who Shot Andy Warhol
+
+As He Cut My Hair, I Wept
+
+Could Doomsday Bunkers Become the New Normal?
+Listen to narrated audio tours — thoughtful stories of history, wildlife, geology, people and points of interest — as you drive through national parks and other stirring landscapes (like Interstate 15 between Los Angeles and southern Utah) with the Just Ahead: Audio Travel Guides app, which uses your smartphone’s GPS. No internet connection is required, and you can play the stories manually as well. The guide to Great Smoky Mountains National Park, for instance, takes passengers from the park’s lowlands to its peaks, past mountain vistas, wildflowers and waterfalls, offering pointers about hiking various trails, less-visited areas and the most likely places to spot wildlife. There are more than a dozen guides so far (to parks such as Badlands, Capitol Reef, Death Valley, Yosemite and Zion), with more on the way. Cost: You can listen to free samples before purchasing a guide (up to $19.99 each); a one-year pass to access all guides is $29.99.
+
+There are official National Park Service apps for a number of parks, each with their own features and notices, like alerts about Covid-19-phased reopenings. The NPS Yellowstone National Park app, for instance, has self-guided audio walking tours, things to do, cultural history, a detailed park map and updated geyser predictions. The best way to find the various apps is to search your app store by park name or “National Park Service.” Cost: Free. Tip: For up-to-the-minute information about trail closures and parking availability, it’s generally a good idea to follow a particular park’s Twitter updates.
+          </div>
+          
+        </div>
+
+        <div class="col-md-5">
+          <h1>Comments</h1>
+          <div class="comments-cont">
+            <div class="comment-post">
+              <p>
+                Post your comment as 
+                <a href="#">Tran Anh Quan</a>
+              </p>
+              <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+              <a href="#" class="btn btn-secondary">Post</a>
+            </div>
+            <div class="comment-box my-3">
+              <p>
+                <a href="#">Nguyen Van A</a>
+                <small class="text-muted">
+                  2hrs ago.
+                </small>
+              </p>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Mollitia vitae ducimus dolorem sapiente ea voluptates laudantium, 
+                voluptatum assumenda magni id consequatur nobis asperiores nihil 
+                omnis. Deserunt nemo quae incidunt veritatis!
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#" class="text-muted">
+                      Reply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-thumbs-up"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-share"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="comment-box my-3">
+              <p>
+                <a href="#">Nguyen Van A</a>
+                <small class="text-muted">
+                  2hrs ago.
+                </small>
+              </p>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Mollitia vitae ducimus dolorem sapiente ea voluptates laudantium, 
+                voluptatum assumenda magni id consequatur nobis asperiores nihil 
+                omnis. Deserunt nemo quae incidunt veritatis!
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#" class="text-muted">
+                      Reply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-thumbs-up"></i>
+                      56
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-share"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="reply-box">
+                <p>
+                  <a href="#">Nguyen Van B</a>
+                  <small class="text-muted">
+                    replied - 
+                    2hrs ago.
+                  </small>
+                </p>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                  Mollitia vitae ducimus dolorem sapiente ea voluptates laudantium, 
+                  voluptatum assumenda magni id consequatur nobis asperiores nihil 
+                  omnis. Deserunt nemo quae incidunt veritatis!
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      <a href="#" class="text-muted">
+                        Reply
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-muted">
+                        <i class="fas fa-thumbs-up"></i>
+                        12
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-muted">
+                        <i class="fas fa-share"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="comment-box my-3">
+              <p>
+                <a href="#">Duong Duc Luan</a>
+                <small class="text-muted">
+                  2hrs ago.
+                </small>
+              </p>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Mollitia vitae ducimus dolorem sapiente ea voluptates laudantium, 
+                voluptatum assumenda magni id consequatur nobis asperiores nihil 
+                omnis. Deserunt nemo quae incidunt veritatis!
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#" class="text-muted">
+                      Reply
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-thumbs-up"></i>
+                      53
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-muted">
+                      <i class="fas fa-share"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row">
+              <div class="favicon"></div>
+              <h3 class="my-auto">MyVietNam</h3>
+            </div>
+            <p>
+              5th flora, 700/D kings road, green lane New York-1782 <br />
+              +10 367 8262567 <br />
+              contact@carpenter.com
+            </p>
+          </div>
+          <div class="col-2">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">
+                Company
+              </li>
+              <li class="list-group-item">Pricing</li>
+              <li class="list-group-item">About</li>
+              <li class="list-group-item">Gallery</li>
+              <li class="list-group-item">Contact</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">
+                Popular Destination
+              </li>
+              <li class="list-group-item pt-0">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <ul class="list-group">
+                      <li class="list-group-item px-0">Pricing</li>
+                      <li class="list-group-item px-0">About</li>
+                      <li class="list-group-item px-0">Gallery</li>
+                      <li class="list-group-item px-0">Contact</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="list-group pt-0">
+                      <li class="list-group-item px-0">Pricing</li>
+                      <li class="list-group-item px-0">About</li>
+                      <li class="list-group-item px-0">Gallery</li>
+                      <li class="list-group-item px-0">Contact</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <ul class="list-group">
+              <li class="list-group-item font-weight-bolder">Instagram</li>
+              <li class="list-group-item">
+                <div class="row no-gutters">
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                  <div class="col-4">
+                    <img src="/img/5352.jpg" alt="" class="card-img" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="../lib/bootstrap/jquery.slim.min.js"></script>
+    <script src="../lib/bootstrap/popper.min.js"></script>
+    <script src="../lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../lib/swiper/swiper.min.js"></script>
+    <script src="../js/lib.js"></script>
+    <script src="../js/animation.js"></script>
+  </body>
+</html>

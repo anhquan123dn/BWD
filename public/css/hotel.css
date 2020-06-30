@@ -1,0 +1,40 @@
+@import "../css/color.css";
+@import "../css/animation.css";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.starting-icon {
+    font-size: 50px;
+    color: #fff;
+}
+
+.card:hover {
+    background-color: var(--gray);
+}
+
+.starting {
+    background-color: var(--gray);
+}
+
+.starting i {
+    color: var(--blue);
+}
+
+.starting h2 {
+    color: #fff;
+}
+
+.card-img-wrapper {
+    height: 70%;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    transition: all 1.2s ease;
+}
+
+.card-img-wrapper:hover img {
+    transform: scale(1.6);
+}
